@@ -31,15 +31,15 @@ Our approach involves feature engineering, where we transform raw data by applyi
 ## Conclusion
 By separating features from the target variable, we train machine learning models to predict ad success based on factors like Age, Income, and Ad characteristics.
 
-# Question 2: What Regression Model is best at predicting the data?
+# Question 2: Can a Regression Model predict the Click Through Rate of an Ad?
 ## Intro
-intro
+Based on the results of the principal component analysis Age, and Income have a high loading, possibly implicating that they are significant variables in the dataset.
 ## Code
-code
+train test split was run on the data solely analyzing click through rate (CTR) on the full and select variables and then scaled the select data in order to perform linear regression on both sets of data.
+R2 values range from 0 to1 with a 1 indicating that the regression model predictions fit the data perfectly. 
 ## Conclusion
-conclusion
-## Sources
-sources
+The r2 values of -0.005 and -0.002. This indicates that the linear regression model does not explain the variability of the data. Overall, the changes in the dependent variable CTR are not completely explained by the changes in the independent variables, demonstrating that a Regression Model cannot predict the click through rate of an ad.
+
 
 # Question 3: Can a Classification model predict if someone clicks on an ad?
 ## Intro
@@ -53,10 +53,8 @@ A classification model can be used to predict if it will convert a user into a c
 
 # Question 4: What is the most desirable ad?
 ## Intro
-intro
+This is an analysis of the data to make meaningful observations.
 ## Code
-code
+My Code is showing what Ad Topic, Gender, Location and Age that are most desirable using the clicks column as the Y value and splitting the X and Y data to find the most common trends.
 ## Conclusion
-conclusion
-## Sources
-sources
+We found that more men over the age of 30 years old who live in Rural , Suburban and Urban under both test data and train data found they are more intersted into the topics of Finance, Travel, and Fashion vs females. 
